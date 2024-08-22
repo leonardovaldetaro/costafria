@@ -1,0 +1,175 @@
+@import "styles/breakpoints";
+@import "styles/variables";
+
+.footer {
+    background-color: $footerBackground;
+    width: 100%;
+    padding: 3em 1em;
+    @media (min-width: $desktop_md) {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        width: 100%;
+    }
+
+    &__logo {
+        font-size: 2em;
+        color: $text;
+        font-weight: 500;
+        text-transform: uppercase;
+        &__link {
+            display: block;
+            &:hover {
+                opacity: .4;
+            }
+            @media (min-width: $desktop_md) {
+                grid-column: 2 / span 2;
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    &__adress {
+        color: $dark-grey;
+        font-size: .875em;
+        font-style: normal;
+        margin-top: 2em;
+        text-transform: uppercase;
+        @media (min-width: $desktop_md) {
+            grid-column: 2 / span 2;
+            grid-row: 2;
+        }
+        &__icon {
+            margin-right: .7em;
+        }
+    }
+
+    &__googleMaps {
+        color: $dark-grey;
+        font-size: .875em;
+        margin-top: 1em;
+        text-transform: uppercase;
+        @media (min-width: $desktop_md) {
+            grid-column: 2 / span 2;
+            grid-row: 3;
+        }
+        &__link {
+            color: $dark-grey;
+            border-bottom: 1px solid rgba(79, 78, 77,0.4);
+            &:hover {
+                color: rgba(79, 78, 77,0.4);
+                border-bottom: 1px solid rgba(79, 78, 77, 0.2);
+            }
+        }
+        &__icon {
+            margin-right: .7em;
+        }
+    }
+
+    &__email {
+        color: $dark-grey;
+        font-size: .875em;
+        margin-top: 1em;
+        text-transform: uppercase;
+        @media (min-width: $desktop_md) {
+            grid-column: 4 / span 2;
+            grid-row: 2;
+        }
+        &__link {
+            color: $dark-grey;
+            border-bottom: 1px solid rgba(79, 78, 77, 0.4);
+            &:hover {
+                color: rgba(79, 78, 77,0.4);
+                border-bottom: 1px solid rgba(79, 78, 77, 0.2);
+            }
+        }
+        &__icon {
+            margin-right: .7em;
+        }
+    }
+
+    &__phone {
+        color: $dark-grey;
+        font-size: .875em;
+        margin-top: 1em;
+        text-transform: uppercase;
+        @media (min-width: $desktop_md) {
+            grid-column: 4 / span 2;
+            grid-row: 3;
+        }
+        &__link {
+            color: $dark-grey;
+            border-bottom: 1px solid rgba(79, 78, 77, 0.4);
+            &:hover {
+                color: rgba(79, 78, 77,0.4);
+                border-bottom: 1px solid rgba(79, 78, 77, 0.2);
+            }
+        }
+        &__icon {
+            margin-right: .7em;
+        }
+    }
+
+    &__time {
+        color: $dark-grey;
+        font-size: .875em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        text-transform: uppercase;
+        @media (min-width: $desktop_md) {
+            grid-column: 6 / span 2;
+            grid-row: 2;
+        }
+        &__link {
+            color: $dark-grey;
+            display: block;
+        }
+        &__icon {
+            margin-right: .7em;
+        }
+    }
+
+    &__socialIcons {
+        margin: 2em 0;
+        @media (min-width: $desktop_md) {
+            grid-column: 7 / span 1;
+            grid-row: 3;
+            display: flex;
+            justify-content: flex-end;
+            margin: 0;
+        }
+        &__icon {
+            margin-right: 1.5em;
+            &:hover {
+                opacity: .4;
+            }
+        }
+    }
+}
+
+.footerCreditos {
+    margin-top: 1em;
+    @media (min-width: $desktop_md) {
+        grid-column: 2 / span 2;
+        grid-row: 5;
+    }
+    &__copyright {
+        font-size: 0.875em;
+        color: $dark-grey;
+        margin-bottom: 1em;
+    }
+}
+
+.botaoFooter {
+    @media (min-width: $desktop_md) {
+        grid-column: 6 / span 2;
+        grid-row: 3;
+    }
+}
+
+hr {
+    @media (min-width: $desktop_md) {
+        margin-top: 2em;
+        grid-column: 1 / span 8;
+        grid-row: 4;
+    }
+}

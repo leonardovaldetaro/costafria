@@ -3,21 +3,20 @@ $padding-h-sm: 9.37em;
 $padding-h-md: 12.5em;
 $padding-h: 15.62em;
 
-$dark: rgb(32,50,62);
-$dark-grey: #878a8f;
-$light-grey: rgb(228, 228, 228);
-$background: #FCFCFC;
-$backgroundHeader: rgba(251, 251, 251,0.95);
-$wite: #ffffff;
+$dark: rgb(34,34,33);
+$light: rgb(249, 246, 241);
+$dark-grey: rgba(79,78,77,1);
+$light-grey: rgba(210,214,217,1);
+$background: rgba(246,244,236,1);
+$footerBackground: rgba(223,218,209,1);
+$text: rgba(23,63,137,1);
 
 $primary: rgba(245,127,32,1);
 $secondary: rgba(255,238,0,1);
 $tertiary: rgba(23,63,137,1);
 
-$shadow: rgba(32,50,62,.3);
+$shadow: rgba(34,34,33,.3);
 
-$label: rgba(black,.7);
-$border: rgba(black,.3);
 
 $active: black;
 $focus: black;

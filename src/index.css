@@ -3,20 +3,9 @@
 /* Google font import */
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
-:root {
-	--text: rgba(245,127,32,1);
-}
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--text);
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-h1 {
-  font-size: 6em;
-  font-weight: 400;
-}
+
