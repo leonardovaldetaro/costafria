@@ -13,11 +13,14 @@ const rotaLogo = [{
 }];
 
 const rotasNav = [{
-  label: 'Projects',
+  label: 'About Restaurant',
   to: '/'
 },{
-  label: 'About',
-  to: '/about'
+  label: 'Menu',
+  to: '/menu'
+},{
+  label: 'Galery',
+  to: '/galery'
 },{
   label: 'Contact',
   to: '/contact'
@@ -32,7 +35,10 @@ const toggleMenu = () => {
 };
 
   return (
-    <header className={Styles.header}>
+    <header className={classNames({
+      [Styles.header]: !false,
+      [Styles.headerOpen]: isMenuOpen
+    })}>
 
       <div className={Styles.header__logo}>
           {rotaLogo.map((rota, index) => (

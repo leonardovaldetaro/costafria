@@ -1,0 +1,15 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
+.top {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        font-size: 3em;
+        font-weight: 500;
+        color: $primary;
+        text-transform: uppercase;
+    }
+}

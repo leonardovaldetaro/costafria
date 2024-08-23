@@ -1,7 +1,7 @@
 import Botao from 'components/button';
 import Styles from './Footer.module.scss';
 import { MdOutlineLocationOn, MdOutlineDirectionsCar, MdMailOutline, MdAccessTime, MdCall } from "react-icons/md";
-import { FaInstagram, FaSquareFacebook } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 import { ReactComponent as LogoCreditos } from 'assets/leonardoValdetaroFrontEndDeveloperLogo.svg';
 
 export default function Footer () {
@@ -70,13 +70,6 @@ export default function Footer () {
             <div className={Styles.footer__socialIcons}>
                 <a href="#" className={Styles.footer__socialIcons__icon}>
                     <FaInstagram 
-                        size={18}
-                        color="#79747e"
-                    />
-                </a>
-
-                <a href="#" className={Styles.footer__socialIcons__icon}>
-                    <FaSquareFacebook 
                         size={18}
                         color="#79747e"
                     />
