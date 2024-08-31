@@ -2,10 +2,16 @@
 @import "styles/_breakpoints.scss";
 
 .top {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    &__img {
+        grid-column: 1 / span 8;
+        height: auto;
+        padding-top: 88px;
+        width: 100%;
+    }
     &__title {
         font-size: 3em;
         font-weight: 500;
