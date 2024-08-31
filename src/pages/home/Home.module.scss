@@ -8,14 +8,33 @@
     width: 100%;
     &__img {
         grid-column: 1 / span 8;
+        grid-row: 1;
         height: auto;
         padding-top: 88px;
         width: 100%;
     }
-    &__title {
-        font-size: 3em;
-        font-weight: 500;
-        color: $primary;
-        text-transform: uppercase;
+    &__info {
+        grid-column: 2 / span 6;
+        grid-row: 1;
+        margin-top: 9em;
+        transform: translate3d(0, 0, 0);
+        &__title {
+            color: $text;
+            font-size: 3em;
+            font-weight: 500;
+            margin-bottom: .5em;
+            text-transform: uppercase;
+            @media (min-width: $desktop_xsm) {
+                font-size: 4em;
+            }
+        }
+        &__text {
+            font-size: 1.2em;
+            font-weight: 500;
+            width: 100%;
+            @media (min-width: $desktop_xsm) {
+                width: 65%;
+            }
+        }
     }
 }
