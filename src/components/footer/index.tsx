@@ -64,7 +64,7 @@ export default function Footer () {
             </div>
 
             <div className={Styles.botaoFooter}>
-                <Botao type='submit'>Faça sua reserva</Botao>
+                <Botao type='submit'>Book your reservation</Botao>
             </div>
 
             <div className={Styles.footer__socialIcons}>
