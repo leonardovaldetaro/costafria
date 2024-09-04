@@ -18,7 +18,7 @@ export default function Home () {
                 <p className={Styles.top__info__text}>Welcome to Costa Fria, where every meal becomes a lasting memory.</p>
                 <p className={Styles.top__info__text2}>Discover a cuisine that delights in every detail.</p>
                 <div className={Styles.top__info__button}>
-                    <Botao>Book your reservation</Botao>
+                    <Botao to={"/reservations"} >Book your reservation</Botao>
                 </div>
             </div>
         </section>
