@@ -1,0 +1,41 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
+.about {
+    grid-column: 1 / span 8;
+    padding: 4em 1em;
+    &__title {
+        font-size: 1.5em;
+        font-weight: 500;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        color: $text;
+    }
+    &__text {
+        font-size: 1.125em;
+        color: $text;
+    }
+    &__imgContainer {
+        margin-top: 1em;
+    }
+    &__concept {
+        margin-top: 2em;
+        &__title {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+            color: $text;
+        }
+        &__text {
+            font-size: 1.125em;
+            color: $text;
+        }
+        &__welcome {
+            color: $text;
+            display: block;
+            margin-top: 1em;
+            text-transform: uppercase;
+        }
+    }
+}

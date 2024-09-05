@@ -2,11 +2,11 @@ import Styles from './Home.module.scss';
 import img_top_md from 'assets/costaFria_top_md.jpg';
 import img_top_sm from 'assets/costaFria_top_sm.jpg';
 import Botao from 'components/button';
+import About from './sectionAbout';
 
 export default function Home () {
     return (
-        <section className={Styles.top}>
-
+        <main className={Styles.top}>
             <img src={img_top_sm}
                 srcSet={`${img_top_sm} 390w, ${img_top_md} 1366w`}
                 sizes="(max-width: 800px) 390px, (max-width: 2000) 1366px, 100vw"
@@ -21,6 +21,7 @@ export default function Home () {
                     <Botao to={"/reservations"} >Book your reservation</Botao>
                 </div>
             </div>
-        </section>
+            <About />
+        </main>
     );
 }

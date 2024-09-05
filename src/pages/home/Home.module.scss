@@ -4,12 +4,11 @@
 .top {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    width: 100%;
     &__img {
         grid-column: 1 / span 8;
         grid-row: 1;
         padding-top: 88px;
-        width: 100%;
+        display: none;
     }
     &__info {
         grid-column: 1 / span 8;
