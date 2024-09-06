@@ -3,39 +3,53 @@
 
 .about {
     grid-column: 1 / span 8;
-    padding: 4em 1em;
-    &__title {
-        font-size: 1.5em;
-        font-weight: 500;
-        margin-bottom: 1em;
-        text-transform: uppercase;
-        color: $text;
+    padding: 0em 1em;
+    margin-bottom: 4em;
+    @media (min-width: $desktop_xsm) {
+        grid-column: 2 / span 6;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 8em 0;
     }
-    &__text {
-        font-size: 1.125em;
-        color: $text;
-    }
-    &__imgContainer {
-        margin-top: 1em;
-    }
-    &__concept {
-        margin-top: 2em;
+    &__container {
+        @media (min-width: $desktop_xsm) {
+            grid-column: 1 / span 1;
+        }
         &__title {
             font-size: 1.5em;
             font-weight: 500;
             margin-bottom: 1em;
             text-transform: uppercase;
             color: $text;
+            @media (min-width: $desktop_xsm) {
+                grid-column: 1 / span 1;
+                grid-row: 1;
+            }
         }
         &__text {
             font-size: 1.125em;
             color: $text;
+            margin-bottom: 2em;
+            @media (min-width: $desktop_xsm) {
+                grid-column: 1 / span 1;
+                grid-row: 1;
+            }
         }
         &__welcome {
             color: $text;
-            display: block;
-            margin-top: 1em;
+            display: inline-block;
+            font-size: 1.125em;
+            margin-bottom: 2em;
             text-transform: uppercase;
+        }
+    }
+    &__imgContainer {
+        margin-top: 1em;
+        @media (min-width: $desktop_xsm) {
+            display: flex;
+            justify-content: flex-end;
+            grid-column: 2 / span 1;
+            grid-row: 1;
         }
     }
 }

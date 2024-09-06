@@ -4,18 +4,20 @@ import imageAbout from 'assets/image-3.jpg';
 export default function About () {
     return (
         <section className={Styles.about}>
-            <h2 className={Styles.about__title}>About the Costa Fria restaurant</h2>
-            <p className={Styles.about__text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis tortor id elit egestas sodales. Nullam imperdiet vitae est vel tincidunt. Praesent consectetur lorem et felis ultrices, ac dictum enim lobortis. Quisque mattis erat et nisi gravida, sit amet sollicitudin diam convallis. Donec lobortis euismod sem sed tristique. Quisque sit amet ipsum orci. Nullam pharetra lobortis tempus.</p>
+
+            <article className={Styles.about__container}>
+                <h2 className={Styles.about__container__title}>About the Costa Fria restaurant</h2>
+                <p className={Styles.about__container__text}>A modern restaurant that combines a cozy atmosphere with contemporary aesthetics. The interior space is charming, with an industrial design and steel tables that blend with vibrant-colored chairs, creating an interesting contrast. The textured ceiling, reminiscent of the sea foam that washes the coast, contrasts with the industrial lighting and exposed structure, creating a modern and laid-back environment. At sunset, the restaurant transforms into an ideal spot to enjoy the breathtaking view of the ocean in the background, where visitors can relax over dinner as daylight fades. The open kitchen also invites interaction, offering a glimpse into the preparation of dishes that highlight the fresh flavors of the region.</p>
+                <h2 className={Styles.about__container__title}>About the concept</h2>
+                <p className={Styles.about__container__text}>Inspirados pelo nosso cenário idílico à beira-mar, ao longo da costa atlântica trazemos sabores arrojados, ingredientes costeiros e a diversidade da cultura gastronómica Portuguesa. pratos contemporâneos e clássicos, pensados para partilhar.
+                </p>
+                <span className={Styles.about__container__welcome}>welcome to ericeira</span>
+            </article>
+
             <figure className={Styles.about__imgContainer}>
                 <img src={imageAbout} alt="" className={Styles.about__imgContainer__img} />
             </figure>
-            <article className={Styles.about__concept}>
-                <h2 className={Styles.about__concept__title}>About the concept</h2>
-                <p className={Styles.about__concept__text}>Inspirados pelo nosso cenário idílico à beira-mar, ao longo da costa atlântica trazemos sabores arrojados, ingredientes
-                    costeiros e a diversidade da cultura gastronómica Portuguesa. pratos contemporâneos e clássicos, pensados para partilhar.
-                </p>
-                <span className={Styles.about__concept__welcome}>welcome to ericeira</span>
-            </article>
+
         </section>
     );
 }

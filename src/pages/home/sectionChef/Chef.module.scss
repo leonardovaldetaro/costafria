@@ -1,0 +1,32 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
+.chef {
+    background-color: $primary;
+    grid-column: 1 / sapn 8;
+    padding: 4em 0 0;
+    @media (min-width: $desktop_xsm) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
+    &__container {
+        color: $light;
+        padding: 0 1em 2em;
+        @media (min-width: $desktop_xsm) {
+            display: flex;
+            flex-direction: column;
+            padding: 2em;
+        }
+        &__title {
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+        }
+        &__text {
+            font-size: 1.125em;
+            margin-bottom: 1em;
+        }
+    }
+}

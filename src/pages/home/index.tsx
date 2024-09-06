@@ -3,6 +3,7 @@ import img_top_md from 'assets/costaFria_top_md.jpg';
 import img_top_sm from 'assets/costaFria_top_sm.jpg';
 import Botao from 'components/button';
 import About from './sectionAbout';
+import Chef from './sectionChef';
 
 export default function Home () {
     return (
@@ -22,6 +23,7 @@ export default function Home () {
                 </div>
             </div>
             <About />
+            <Chef />
         </main>
     );
 }
