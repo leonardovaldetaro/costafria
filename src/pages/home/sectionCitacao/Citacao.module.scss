@@ -1,0 +1,38 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
+.citacao {
+    margin: 4em 0;
+    grid-column: 1 / span 8;
+    padding: 0 1em;
+    &__title {
+        color: $text;
+        font-size: 1em;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: inline-block;
+        border-bottom: 1px solid $text;
+        margin-bottom: 2em;
+    }
+    &__text {
+        color: $text;
+        font-size: 1em;
+        font-style: italic;
+        font-family: "Mate", serif;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    &__name {
+        color: $text;
+        font-size: 1em;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 2em;
+        span {
+            font-style: italic;
+            font-family: "Mate", serif;
+            font-weight: 400;
+            text-transform: none;
+        }
+    }
+}
