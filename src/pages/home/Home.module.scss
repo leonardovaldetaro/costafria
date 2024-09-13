@@ -13,6 +13,7 @@
     &__info {
         grid-column: 1 / span 8;
         grid-row: 1;
+        height: calc(100vh - 88px);
         margin-top: 9em;
         transform: translate3d(0, 0, 0);
         padding: 2em 1em 8em;

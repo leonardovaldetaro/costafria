@@ -4,22 +4,20 @@
 .menu {
     grid-column: 1 / span 8;
     padding: 0 1em;
-    margin: 4em 0;
+    margin: 4em 0 8em;
     &__title {
         font-size: 1.5em;
         font-weight: 500;
         margin-bottom: 1em;
         text-transform: uppercase;
         color: $text;
-        text-align: right;
     }
     &__text {
         font-size: 1.125em;
         color: $text;
         margin-bottom: 2em;
-        text-align: right;
     }
     &__containerButton {
-        text-align: right;
+        margin-top: 2em;
     }
 }

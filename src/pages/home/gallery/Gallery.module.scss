@@ -1,0 +1,17 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
+// Gallery.module.scss
+.gallery {
+    display: flex;
+    margin: -10px; /* Para criar o espaçamento entre as imagens */
+    grid-column: 1 / span 8 ;
+  
+    .galleryColumn {
+      padding: 10px;
+    }
+  
+    .galleryImage {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+  }

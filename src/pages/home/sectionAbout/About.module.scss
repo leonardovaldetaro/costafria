@@ -4,7 +4,6 @@
 .about {
     grid-column: 1 / span 8;
     padding: 0em 1em;
-    margin-bottom: 4em;
     @media (min-width: $desktop_xsm) {
         grid-column: 2 / span 6;
         display: grid;

@@ -6,6 +6,18 @@ import About from './sectionAbout';
 import Chef from './sectionChef';
 import Citacao from './sectionCitacao';
 import Menu from './menu';
+import Gallery from './gallery';
+
+import image01 from 'assets/imageGallery_01.jpg';
+import image02 from 'assets/imageGallery_02.jpg';
+import image03 from 'assets/imageGallery_05.jpg';
+
+
+const imageList = [
+    { src: image01, alt: 'Imagem 1' },
+    { src: image02, alt: 'Imagem 2' },
+    { src: image03, alt: 'Imagem 3' },
+  ];
 
 export default function Home () {
     return (
@@ -28,6 +40,7 @@ export default function Home () {
             <Menu />
             <Chef />
             <Citacao />
+            <Gallery images={imageList}/>
         </main>
     );
 }
