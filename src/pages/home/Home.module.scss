@@ -10,7 +10,9 @@
         grid-row: 1;
         padding-top: 88px;
         display: block;
-        margin: 0 auto;
+        @media (min-width: $desktop_xsm) {
+            margin: 0 auto;
+        }
     }
     &__info {
         grid-column: 1 / span 8;
