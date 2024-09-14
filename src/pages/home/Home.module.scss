@@ -5,17 +5,16 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     max-width: 1366px;
-    margin: 0 auto;
     &__img {
         grid-column: 1 / span 8;
         grid-row: 1;
         padding-top: 88px;
         display: block;
+        margin: 0 auto;
     }
     &__info {
         grid-column: 1 / span 8;
         grid-row: 1;
-        height: calc(100vh - 88px);
         margin-top: 9em;
         transform: translate3d(0, 0, 0);
         padding: 2em 1em 8em;
