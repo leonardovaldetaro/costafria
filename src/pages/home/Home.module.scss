@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     max-width: 1366px;
+    margin-bottom: 4em;
     &__img {
         grid-column: 1 / span 8;
         grid-row: 1;
