@@ -5,6 +5,10 @@
     grid-column: 1 / span 8;
     padding: 0 1em;
     margin: 4em 0 8em;
+    @media (min-width: $desktop_xsm) {
+        grid-column: 3 / span 4;
+        padding: 0;
+      }
     &__title {
         font-size: 1.5em;
         font-weight: 500;

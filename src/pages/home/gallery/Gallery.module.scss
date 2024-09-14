@@ -3,15 +3,30 @@
 
 // Gallery.module.scss
 .gallery {
-    display: flex;
-    margin: -10px; /* Para criar o espaçamento entre as imagens */
-    grid-column: 1 / span 8 ;
-  
-    .galleryColumn {
-      padding: 10px;
-    }
-  
-    .galleryImage {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
+  display: flex;
+  grid-column: 1 / span 8 ;
+  @media (min-width: $desktop_xsm) {
+    grid-column: 2 / span 6;
   }
+  
+  .galleryColumn {
+    padding: 0;
+  }
+  
+  .galleryImage {
+    padding: .3em;
+  }
+}
+.galleryTitle {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  color: $text;
+  grid-column: 1 / span 8;
+  padding: 0 1em;
+  @media (min-width: $desktop_xsm) {
+    grid-column: 2 / span 6;
+    padding: 0;
+  }
+}

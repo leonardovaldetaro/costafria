@@ -131,16 +131,22 @@
     &__socialIcons {
         margin: 2em 0;
         @media (min-width: $desktop_xsm) {
-            grid-column: 7 / span 1;
+            grid-column: 8 / span 2;
             grid-row: 3;
             display: flex;
-            justify-content: flex-end;
+            justify-content: flex-start;
             margin: 0;
         }
         &__icon {
             margin-right: 1.5em;
             &:hover {
                 opacity: .4;
+            }
+            &__name {
+                font-size: .8em;
+                text-transform: uppercase;
+                color: $text;
+                margin-left: .3em;
             }
         }
     }

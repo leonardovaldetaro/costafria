@@ -106,7 +106,7 @@ const toggleMenu = () => {
             </li>
           ))}
         </ul>
-        <Botao type='submit'>Book your reservation</Botao>
+        <Botao to={"/reservations"}>Book your reservation</Botao>
         <span className={Styles.copyright}>&copy; Restaurante Costa Fria. Todos os direitos reservados.</span>
       </nav>
 

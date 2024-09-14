@@ -7,9 +7,6 @@ interface Image {
   alt: string;
 }
 
-const imageList = [
-  { src: 'assets/imageGallery_01.jpg', alt: 'Imagem 1' },
-];
 
 const Gallery: React.FC<{ images: Image[] }> = ({ images }) => {
   const breakpointColumnsObj = {
@@ -19,6 +16,8 @@ const Gallery: React.FC<{ images: Image[] }> = ({ images }) => {
   };
 
   return (
+    <>
+    <h2 className={Styles.galleryTitle}>gallery</h2>
     <Masonry
       breakpointCols={breakpointColumnsObj}
       className={Styles.gallery}
@@ -30,6 +29,7 @@ const Gallery: React.FC<{ images: Image[] }> = ({ images }) => {
         ) : null
       ))}
     </Masonry>
+    </>
   );
 };
 
