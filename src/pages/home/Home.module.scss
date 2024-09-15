@@ -5,12 +5,11 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     max-width: 1366px;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     &__img {
         grid-column: 1 / span 8;
         grid-row: 1;
         padding-top: 88px;
-        display: block;
         @media (min-width: $desktop_xsm) {
             margin: 0 auto;
         }
@@ -38,7 +37,7 @@
         &__text {
             color: $light;
             display: block;
-            font-size: 1.3em;
+            font-size: 1.35em;
             font-weight: 300;
             line-height: 1.2;
             background-color: $primary;
@@ -51,12 +50,13 @@
         &__text2 {
             color: $light;
             display: block;
-            font-size: 1.3em;
+            font-size: 1.35em;
             font-weight: 300;
             line-height: 1.2;
             background-color: $primary;
             padding: .3em .5em;
             margin-top: .2em;
+            width: 85%;
             @media (min-width: $desktop_xsm) {
                 width: 45%;
             }

@@ -11,7 +11,7 @@
       }
     &__title {
         color: $text;
-        font-size: 1em;
+        font-size: $title;
         font-weight: 500;
         text-transform: uppercase;
         display: inline-block;
@@ -20,7 +20,7 @@
     }
     &__text {
         color: $text;
-        font-size: 1em;
+        font-size: $textBody;
         font-style: italic;
         font-family: "Mate", serif;
         font-weight: 400;

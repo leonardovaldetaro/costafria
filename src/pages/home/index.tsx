@@ -1,5 +1,4 @@
 import Styles from './Home.module.scss';
-import img_top_md from 'assets/costaFria_top_md.jpg';
 import img_top_sm from 'assets/costaFria_top_sm.jpg';
 import Botao from 'components/button';
 import About from './sectionAbout';
@@ -14,7 +13,6 @@ import image03 from 'assets/imageGallery_03.jpg';
 import image04 from 'assets/imageGallery_04.jpg';
 import image05 from 'assets/imageGallery_05.jpg';
 import image06 from 'assets/imageGallery_06.jpg';
-import image07 from 'assets/imageGallery_07.jpg';
 import image08 from 'assets/imageGallery_08.jpg';
 import image09 from 'assets/imageGallery_09.jpg';
 import image10 from 'assets/imageGallery_10.jpg';
@@ -42,8 +40,6 @@ export default function Home () {
     return (
         <main className={Styles.top}>
             <img src={img_top_sm}
-                srcSet={`${img_top_sm} 390w, ${img_top_md} 1366w`}
-                sizes="(max-width: 800px) 390px, (max-width: 2000) 1366px, 100vw"
             	alt="" 
                 className={Styles.top__img} />
 

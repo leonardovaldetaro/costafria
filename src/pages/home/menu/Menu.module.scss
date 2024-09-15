@@ -10,14 +10,15 @@
         padding: 0;
       }
     &__title {
-        font-size: 1.5em;
+        font-size: $title;
         font-weight: 500;
         margin-bottom: 1em;
         text-transform: uppercase;
         color: $text;
     }
     &__text {
-        font-size: 1.125em;
+        font-size: $text;
+        line-height: $lineHeigt;
         color: $text;
         margin-bottom: 2em;
     }
