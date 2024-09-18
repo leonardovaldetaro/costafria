@@ -18,9 +18,8 @@
     }
     &__info {
         background-image: url(../../assets/costaFria_sunsetView_03.jpg) ;
-        background-position: center;
+        background-position: center 56%;
         background-repeat: no-repeat;
-        background-size: cover;
         background-attachment: scroll, fixed;
         grid-column: 1 / span 8;
         grid-row: 1;
@@ -32,6 +31,7 @@
             grid-column: 1 / span 8;
             padding: 8em 11em;
             height: calc(100vh - 5em);
+            background-size: cover;
 
         }
         &__title {
