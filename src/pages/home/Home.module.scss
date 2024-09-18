@@ -6,26 +6,36 @@
     grid-template-columns: repeat(8, 1fr);
     max-width: 1366px;
     margin-bottom: 2em;
+    @media (min-width: $desktop_xsm) {
+        margin: 0 auto;
+    }
     &__img {
         grid-column: 1 / span 8;
         grid-row: 1;
         padding-top: 88px;
-        @media (min-width: $desktop_xsm) {
-            margin: 0 auto;
-        }
+        width: 100%;
+        display: none;
     }
     &__info {
+        background-image: url(../../assets/costaFria_sunsetView_03.jpg) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll, fixed;
         grid-column: 1 / span 8;
         grid-row: 1;
-        margin-top: 9em;
+        margin-top: 5em;
         transform: translate3d(0, 0, 0);
-        padding: 2em 1em 8em;
+        padding: 12em 1em 8em;
+        height: calc(100vh - 5em);
         @media (min-width: $desktop_xsm) {
-            grid-column: 2 / span 6;
-            padding: 0;
+            grid-column: 1 / span 8;
+            padding: 8em 11em;
+            height: calc(100vh - 5em);
+
         }
         &__title {
-            color: $text;
+            color: $light;
             font-size: 3em;
             font-weight: 500;
             margin-bottom: .5em;
@@ -40,8 +50,7 @@
             font-size: 1.35em;
             font-weight: 300;
             line-height: 1.2;
-            background-color: $primary;
-            padding: .3em .5em;
+            padding: .3em 0em;
             margin-top: .3em;
             @media (min-width: $desktop_xsm) {
                 width: 65%;

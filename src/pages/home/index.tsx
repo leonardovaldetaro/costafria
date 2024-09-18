@@ -11,7 +11,6 @@ import image01 from 'assets/imageGallery_01.jpg';
 import image02 from 'assets/imageGallery_02.jpg';
 import image03 from 'assets/imageGallery_03.jpg';
 import image04 from 'assets/imageGallery_04.jpg';
-import image05 from 'assets/imageGallery_05.jpg';
 import image06 from 'assets/imageGallery_06.jpg';
 import image08 from 'assets/imageGallery_08.jpg';
 import image09 from 'assets/imageGallery_09.jpg';
@@ -19,6 +18,9 @@ import image10 from 'assets/imageGallery_10.jpg';
 import image11 from 'assets/imageGallery_11.jpg';
 import image12 from 'assets/imageGallery_12.jpg';
 import image13 from 'assets/imageGallery_13.jpg';
+import image14 from 'assets/costaFria_sunsetView_03.jpg';
+import image15 from 'assets/costaFria_sunsetView_01.jpg';
+import image16 from 'assets/costaFria_sunsetView_02.jpg';
 
 
 const imageList = [
@@ -26,22 +28,26 @@ const imageList = [
     { src: image10, alt: 'Imagem 2' },
     { src: image03, alt: 'Imagem 3' },
     { src: image04, alt: 'Imagem 4' },
-    { src: image05, alt: 'Imagem 5' },
+    { src: image14, alt: 'Imagem 14' },
     { src: image06, alt: 'Imagem 7' },
     { src: image08, alt: 'Imagem 8' },
     { src: image09, alt: 'Imagem 9' },
+    { src: image13, alt: 'Imagem 13' },
     { src: image02, alt: 'Imagem 10' },
-    { src: image11, alt: 'Imagem 10' },
-    { src: image12, alt: 'Imagem 10' },
-    { src: image13, alt: 'Imagem 10' },
-  ];
+    { src: image15, alt: 'Imagem 15' },
+    { src: image11, alt: 'Imagem 11' },
+    { src: image12, alt: 'Imagem 12' },
+    { src: image16, alt: 'Imagem 16' },
+];
 
-export default function Home () {
+export default function Home() {
     return (
         <main className={Styles.top}>
+
             <img src={img_top_sm}
-            	alt="" 
-                className={Styles.top__img} />
+                alt=""
+                className={Styles.top__img} 
+            />
 
             <div className={Styles.top__info}>
                 <h1 className={Styles.top__info__title}>costa fria</h1>
@@ -55,7 +61,7 @@ export default function Home () {
             <Menu />
             <Chef />
             <Citacao />
-            <Gallery images={imageList}/>
+            <Gallery images={imageList} />
         </main>
     );
 }
