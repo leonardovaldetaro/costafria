@@ -1,6 +1,6 @@
 import Styles from './About.module.scss';
 import imageAbout from 'assets/image-3_b.jpg';
-import imageSunset from 'assets/imageGallery_05.jpg';
+import imageSunset from 'assets/costaFria_sunsetView_04.jpg';
 
 export default function About() {
     return (
