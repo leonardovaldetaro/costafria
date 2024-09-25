@@ -6,14 +6,15 @@ type props  = {
     children: string,
     type?: "button" | "submit" | "reset" | undefined,
     to?: string
+    onClick?: () => void;
 }
 
 class Botao extends React.Component<props> {
     render() {
-        const { type="button", to } = this.props;
+        const { type="button", to, onClick } = this.props;
 
         return to ? (
-            <Link to={to} className={Styles.botaoLink}>
+            <Link to={to} className={Styles.botaoLink} onClick={onClick}>
                 {this.props.children}
             </Link>
         ) : (

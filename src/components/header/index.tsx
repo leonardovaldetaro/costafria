@@ -17,10 +17,10 @@ const rotasNav = [{
   to: '/'
 },{
   label: 'Menu',
-  to: '/menu'
+  to: '/cardapio'
 },{
   label: 'Galery',
-  to: '/galery'
+  to: '/galeria'
 },{
   label: 'Contact',
   to: '/contact'
@@ -106,7 +106,16 @@ const toggleMenu = () => {
             </li>
           ))}
         </ul>
-        <Botao to={"/reservations"}>Book your reservation</Botao>
+
+        <Botao 
+          to={"/reservations"}
+          onClick={() => {
+            toggleMenu();
+          }}
+        >
+          Book your reservation
+        </Botao>
+
         <span className={Styles.copyright}>&copy; Restaurante Costa Fria. Todos os direitos reservados.</span>
       </nav>
 

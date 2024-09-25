@@ -3,14 +3,15 @@ import Styles from './Footer.module.scss';
 import { MdOutlineLocationOn, MdOutlineDirectionsCar, MdMailOutline, MdAccessTime, MdCall } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa6";
 import { ReactComponent as LogoCreditos } from 'assets/leonardoValdetaroFrontEndDeveloperLogo.svg';
+import { Link } from 'react-router-dom';
 
 export default function Footer () {
     return (
         <footer className={Styles.footer}>
             
-            <a href="#" className={Styles.footer__logo__link}>
+            <Link to={'/'} className={Styles.footer__logo__link}>
                 <h2 className={Styles.footer__logo}>costa fria</h2>
-            </a>
+            </Link>
 
             <address className={Styles.footer__adress}>
                 <MdOutlineLocationOn 
@@ -68,7 +69,7 @@ export default function Footer () {
             </div>
 
             <div className={Styles.footer__socialIcons}>
-                <a href="#" className={Styles.footer__socialIcons__icon}>
+                <a href="https://www.instagram.com/costa.fria/" className={Styles.footer__socialIcons__icon} target='new'>
                     <FaInstagram 
                         size={18}
                         color="#79747e"
@@ -85,7 +86,7 @@ export default function Footer () {
                 </p>
                 
                 <div className={Styles.footerCreditos__logo}>
-                    <a href="#">
+                    <a href="https://leonardovaldetaro.com.br">
                         <LogoCreditos />
                     </a>
                 </div>

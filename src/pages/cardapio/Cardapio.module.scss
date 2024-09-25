@@ -1,0 +1,52 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
+.cardapio {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 9em 1em 8em;
+    @media (min-width: $desktop_xsm) {
+        max-width: 1366px;
+        margin: 0 auto;
+        height: 100vh;
+    }
+    &__container {
+        grid-column: 1 / span 8;
+        padding-top: 3em;
+        @media (min-width: $desktop_xsm) {
+            grid-column: 5 / span 3;
+        }
+        &__title {
+            font-size: $title;
+            font-weight: 500;
+            margin-bottom: 1em;
+            text-transform: uppercase;
+            color: $text;
+            @media (min-width: $desktop_xsm) {
+                
+            }
+        }
+        &__text {
+            font-size: $textBody;
+            line-height: $lineHeigt;
+            color: $text;
+            margin-bottom: 2em;
+            @media (min-width: $desktop_xsm) {
+                
+            }
+        }
+        &__containerButton {
+            margin-top: 2em;
+        }
+    }
+    &__containerImagem {
+        grid-column: 1 / span 8;
+        grid-row: 1;
+        @media (min-width: $desktop_xsm) {
+            grid-column: 2 / span 3;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+}

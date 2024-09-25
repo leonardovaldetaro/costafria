@@ -1,0 +1,41 @@
+@import "styles/_variables.scss";
+@import "styles/_breakpoints.scss";
+
+// Gallery.module.scss
+.gallery {
+  display: flex;
+  grid-column: 1 / span 8 ;
+  @media (min-width: $desktop_xsm) {
+    grid-column: 2 / span 6;
+  }
+  
+  .galleryColumn {
+    padding: 0;
+  }
+  
+  .galleryImage {
+    padding: .3em;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.02);
+      filter: brightness(.7);
+    }
+  }
+}
+.galleryTitle {
+  font-size: $title;
+  font-weight: 500;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+  color: $text;
+  grid-column: 1 / span 8;
+  padding: 0 1em;
+  @media (min-width: $desktop_xsm) {
+    grid-column: 2 / span 6;
+    padding: 0;
+  }
+}

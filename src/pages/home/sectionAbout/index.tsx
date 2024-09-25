@@ -14,7 +14,7 @@ export default function About() {
                 </p>
             </article>
             <figure className={Styles.about__imgContainer}>
-                <img src={imageAbout} alt="" className={Styles.about__imgContainer__imgInside} />
+                <img src={imageAbout} alt="Modern interior of Costa Fria restaurant with industrial decor, stainless steel tables, and orange-toned chairs." className={Styles.about__imgContainer__imgInside} />
             </figure>
 
 
@@ -25,7 +25,7 @@ export default function About() {
             </article>
 
             <figure className={Styles.about__imgContainerSunset}>
-                <img src={imageSunset} alt="" className={Styles.about__imgContainer__imgSunset} />
+                <img src={imageSunset} alt="Dining at Costa Fria restaurant at sunset, with a view of the sea and golden horizon." className={Styles.about__imgContainer__imgSunset} />
             </figure>
 
         </section>
