@@ -17,7 +17,7 @@
         display: none;
     }
     &__info {
-        background-image: url(../../assets/costaFria_sunsetView_topo2.jpg) ;
+        background-image: linear-gradient(#00000045, #00000045), url(../../assets/img_top_temp.jpeg) ;
         background-position: 38% 52%;
         background-repeat: no-repeat;
         background-attachment: scroll, fixed;

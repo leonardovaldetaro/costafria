@@ -21,9 +21,14 @@ import image13 from 'assets/imageGallery_13.jpg';
 import image14 from 'assets/costaFria_sunsetView_03.jpg';
 import image15 from 'assets/costaFria_sunsetView_01.jpg';
 import image16 from 'assets/costaFria_sunsetView_02.jpg';
+import image17 from 'assets/imageGallery_14.jpg';
+import image18 from 'assets/imageGallery_15.jpg';
+import image19 from 'assets/costaFria_sunsetView_07.jpg';
+import image20 from 'assets/imageGallery_16.jpg';
 
 
 const imageList = [
+    { src: image18, alt: 'Imagem 18' },
     { src: image01, alt: 'Imagem 1' },
     { src: image10, alt: 'Imagem 2' },
     { src: image03, alt: 'Imagem 3' },
@@ -32,12 +37,15 @@ const imageList = [
     { src: image06, alt: 'Imagem 7' },
     { src: image08, alt: 'Imagem 8' },
     { src: image09, alt: 'Imagem 9' },
+    { src: image17, alt: 'Imagem 17' },
     { src: image13, alt: 'Imagem 13' },
     { src: image02, alt: 'Imagem 10' },
     { src: image15, alt: 'Imagem 15' },
     { src: image11, alt: 'Imagem 11' },
+    { src: image19, alt: 'Imagem 17' },
     { src: image12, alt: 'Imagem 12' },
     { src: image16, alt: 'Imagem 16' },
+    { src: image20, alt: 'Imagem 16' },
 ];
 
 export default function Home() {

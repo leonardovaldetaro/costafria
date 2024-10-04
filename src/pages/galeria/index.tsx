@@ -15,23 +15,31 @@ import image13 from 'assets/imageGallery_13.jpg';
 import image14 from 'assets/costaFria_sunsetView_03.jpg';
 import image15 from 'assets/costaFria_sunsetView_01.jpg';
 import image16 from 'assets/costaFria_sunsetView_02.jpg';
+import image17 from 'assets/imageGallery_14.jpg';
+import image18 from 'assets/imageGallery_15.jpg';
+import image19 from 'assets/costaFria_sunsetView_07.jpg';
+import image20 from 'assets/imageGallery_16.jpg';
 
 
 const imageList = [
+    { src: image18, alt: 'The facade of the Costa Fria restaurant.' },
     { src: image01, alt: 'Imagem 1' },
     { src: image10, alt: 'Imagem 2' },
-    { src: image03, alt: 'Imagem 3' },
+    { src: image03, alt: 'The terrace of Costa Fria with blue lights after sunset.' },
     { src: image04, alt: 'Imagem 4' },
     { src: image14, alt: 'Imagem 14' },
-    { src: image06, alt: 'Imagem 7' },
+    { src: image06, alt: 'The entrance hallway of the restaurant. Welcome!' },
     { src: image08, alt: 'Imagem 8' },
     { src: image09, alt: 'Imagem 9' },
+    { src: image17, alt: 'Our delicious scallop appetizer. Costa Fria Restaurant.' },
     { src: image13, alt: 'Imagem 13' },
     { src: image02, alt: 'Imagem 10' },
-    { src: image15, alt: 'Imagem 15' },
+    { src: image15, alt: 'Come enjoy the sunset on the terrace of Costa Fria restaurant.' },
     { src: image11, alt: 'Imagem 11' },
-    { src: image12, alt: 'Imagem 12' },
+    { src: image19, alt: 'Imagem 12' },
+    { src: image12, alt: 'Our delicious scallop appetizer. Costa Fria Restaurant.' },
     { src: image16, alt: 'Imagem 16' },
+    { src: image20, alt: 'Imagem 16' },
 ];
 
 export default function Galeria () {
